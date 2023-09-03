@@ -1,4 +1,4 @@
-package karate.testscripts;
+package cl.foxcorp.app.webfluxkarate;
 
 import com.intuit.karate.junit5.Karate;
 

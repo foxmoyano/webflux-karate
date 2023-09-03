@@ -2,7 +2,7 @@ Feature: Testing user service
 
 Background:
   * def baseUrl = 'http://localhost:8080/api/v1/users'
-  * def userId = '64f3d5b5d448f628ac2e5ca3'
+  * def userId = '64f3e02ae5a34a5e1e4ae3d9'
 
 # getAllUsers
 Scenario: Get list of users
@@ -28,10 +28,10 @@ Scenario: Get user by id
 # addUser
 Scenario: Add a new user
   Given url baseUrl
-  And request {"username": "john","email": "john@correo.cl","state": true}
+  And request {"username": "alan","email": "alan@correo.cl","state": true}
   When method POST
   Then status 201
-  *  match response contains { username: 'john', email: 'john@correo.cl', state: true }
+  *  match response contains { username: 'alan', email: 'alan@correo.cl', state: true }
 
 # updateUser
 Scenario: Update a user
